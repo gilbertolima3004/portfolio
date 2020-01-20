@@ -27,8 +27,9 @@ printf("\n\n");
 		
 		int numsec = numerogrande % 100;
 		/*Cálculo matemático para tirar o resto da variável "numerogrande", para
-		*/que o número secreto seja sempre entre 1 e 99.
-		  
+		que o número secreto seja sempre entre 1 e 99.
+		*/
+	
 		int chute; 
 		int tentativas = 1;
 		int nivel;
@@ -75,7 +76,8 @@ printf("\n\n");
 					printf("Você não pode chutar números negativos!\n");
 					continue;
 					 /*Essa função faz com que o "FOR" pare a execução deste bloco
-					*/e vá direto para o "INCREMENTO" : o "tentativas++".	
+					 e vá direto para o "INCREMENTO" : o "tentativas++".	
+					*/
 				}
 				
 				acertou = (chute == numsec);
