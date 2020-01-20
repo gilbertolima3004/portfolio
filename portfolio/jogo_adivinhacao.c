@@ -39,31 +39,31 @@ printf("\n\n");
 		int verificarnumero = 1;
 		
 		while(verificarnumero == 1){
-		printf("\nQual nível de dificuldade deseja jogar?\n");
-		printf("(1) Fácil (2) Médio (3) Difícil\n\n");
-		printf("No nível 1, você terá 20 tentativas.\n");
-		printf("No nível 2, você terá 12 tentativas.\n");
-		printf("No nível 3, você terá 6 tentativas.\n");
-		printf("Escolha: ");
-		scanf("%d", &nivel);
+			printf("\nQual nível de dificuldade deseja jogar?\n");
+			printf("(1) Fácil (2) Médio (3) Difícil\n\n");
+			printf("No nível 1, você terá 20 tentativas.\n");
+			printf("No nível 2, você terá 12 tentativas.\n");
+			printf("No nível 3, você terá 6 tentativas.\n");
+			printf("Escolha: ");
+			scanf("%d", &nivel);
 		
 		
-		switch(nivel){
-			case 1: numerodetentativas = 20;
-			verificarnumero = 0;
-			break;
-			
-			case 2: numerodetentativas = 12;
-			verificarnumero = 0;
-			break;
-			
-			case 3: numerodetentativas = 6;
-			verificarnumero = 0;
-			break;
-			
-			default: printf("\n\nESCOLHA NÚMEROS ENTRE 1 A 3, POR FAVOR!\n\n");
+			switch(nivel){
+				case 1: numerodetentativas = 20;
+				verificarnumero = 0;
+				break;
+
+				case 2: numerodetentativas = 12;
+				verificarnumero = 0;
+				break;
+
+				case 3: numerodetentativas = 6;
+				verificarnumero = 0;
+				break;
+
+				default: printf("\n\nESCOLHA NÚMEROS ENTRE 1 A 3, POR FAVOR!\n\n");
+			}
 		}
-	}
 		
 			for(int i = 1; i <= numerodetentativas; i++){
 				printf("\nTentativa %d\n", tentativas);
@@ -76,7 +76,7 @@ printf("\n\n");
 					printf("Você não pode chutar números negativos!\n");
 					continue;
 					 /*Essa função faz com que o "FOR" pare a execução deste bloco
-					 e vá direto para o "INCREMENTO" : o "tentativas++".	
+					 e vá direto para o "INCREMENTO".	
 					*/
 				}
 				
@@ -85,22 +85,19 @@ printf("\n\n");
 				
 				if(acertou){
 					break;
-				}
-			
-				else if(maior){	
+				} else if (maior){	
 					printf("\nSeu chute foi maior que o número secreto!\n");
-				}
-				else{
-					printf("\nSeu chute foi menor que o número secreto!\n");			
-				}
-				tentativas++;
-			}
-			
-					if(acertou){
-						printf("Fim de Jogo!\n"); 
-						printf("\nVocê acertou o jogo em %d tentativas!\n", tentativas);
 					} else {
-						printf("Você perdeu! Tente novamente!");
+						printf("\nSeu chute foi menor que o número secreto!\n");			
 					}
+					tentativas++;
+				}
+			
+				if(acertou){
+					printf("Fim de Jogo!\n"); 
+					printf("\nVocê acertou o jogo em %d tentativas!\n", tentativas);
+				} else {
+					printf("Você perdeu! Tente novamente!");
+				}
 return 0;
 }
