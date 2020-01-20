@@ -1,2 +1,2 @@
 # portfolio
-Repositório com alguns dos meus projetos/exercicíos da faculdade.
+Repositório com alguns dos meus projetos/exercícios da faculdade.
